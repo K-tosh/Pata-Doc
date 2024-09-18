@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pata Doc</title>
+    
+    <!-- Custom CSS link -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@300;400;700&family=Nunito:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <header style="background-color:rgba(37, 211, 102, 0.8); backdrop-filter: blur(10px);">
+        <h2 class="logo">Pata<span>Doc</span></h2>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#Expertise">Expertise</a></li>
+            <li><a href="Availability">Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="overlay"></div>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./img/doctor.mp4" type="video/mp4">
+
+        </video>
+        <div class="home-text">
+            <h4 class="animate-text">Hello</h4>
+            <h1 class="animate-text">I'm DR.Eric Kantona <br> <span>Obstretician | Gynaecologist</span></h1>
+            <h3 class="animate-text">Specialized in women’s health, fertility, and reproductive surgeries.</h3>
+            <a href="booking.html" class="btn animate-btn">Book appointment</a>
+            <a href="https://wa.me/0791674164?text=Hello%20I%20would%20like%20to%20book%20an%20appointment" class="whatsapp-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Whatsapp
+            </a>
+            <button class="call-button" onclick="makeCall()">Speak to Specialist Now</button>
+            <a href="https://meet.jit.si/YourRoomName" class="video-call-button" target="_blank">
+                <i class="fas fa-video"></i> Start Video Call
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/profilepic.png" alt="Eric Lugaya Musanyi">
+        </div>
+        
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4>Hi, I’m Dr.Eric Kantona</h4>
+            <p>I am an Obstetrician and Gynecologist with over 4 years of experience in women’s health, specializing in reproductive health, prenatal care, and gynecological surgery. My passion lies in providing compassionate, patient-centered care to improve outcomes for women throughout all stages of life..</p>
+            <div class="about-eri">
+                <div class="about-er">
+                    <h5>1. High-Risk Pregnancy Management</h5>
+                </div>
+                <div class="about-er">
+                    <h5>2. Gynecological_Surgery</h5>
+                </div>
+                <div class="about-er">
+                    <h5>3. Prenatal Care</h5>
+                </div>
+                <div class="about-er">
+                    <h5>4. Reproductive Health</h5>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <div class="services-text">
+        <h4>Services</h4> 
+        <section class="services" id="services">
+            <button class="collapsible-heading"><h2>Obstetrician Services</h2><i class="fas fa-chevron-down"></i></button>
+            <div class="content">
+                <button class="collapsible">Prenatal Care<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Routine prenatal check-ups.</li>
+                        <li>Ultrasound and fetal monitoring.</li>
+                        <li>Nutritional and lifestyle guidance for pregnant women.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">High-Risk Pregnancy Management<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Monitoring and managing complications like gestational diabetes, preeclampsia, and preterm labor.</li>
+                        <li>Specialized care for multiple pregnancies (twins, triplets, etc.).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Labor & Delivery Services<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Vaginal delivery.</li>
+                        <li>Assisted delivery (vacuum extraction or forceps).</li>
+                        <li>Cesarean section (C-section).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Postnatal Care<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Postpartum check-ups.</li>
+                        <li>Breastfeeding support and guidance.</li>
+                        <li>Postpartum depression management.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Family Planning & Contraception<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Birth control counseling and prescriptions.</li>
+                        <li>Intrauterine device (IUD) insertion and removal.</li>
+                        <li>Contraceptive implant insertion and removal.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <button class="collapsible-heading"><h2>Gynecological Service</h2><i class="fas fa-chevron-down"></i></button>
+            <div class="content">
+                <button class="collapsible">Routine Gynecological Exams<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Pap smears for cervical cancer screening.</li>
+                        <li>Pelvic exams.</li>
+                        <li>Breast exams.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Management of Menstrual Disorders<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Treatment for heavy periods (menorrhagia).</li>
+                        <li>Painful periods (dysmenorrhea) and irregular cycles.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Diagnosis & Treatment of Reproductive Disorders<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Polycystic Ovary Syndrome (PCOS).</li>
+                        <li>Endometriosis.</li>
+                        <li>Uterine fibroids.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Infertility Diagnosis & Treatment<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Fertility assessments.</li>
+                        <li>Assisted reproductive technologies (ART) like IVF (In Vitro Fertilization).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Gynecologic Cancer Screenings<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Ovarian, uterine, cervical, and vulvar cancer screenings.</li>
+                        <li>Colposcopy and biopsy for abnormal Pap smears.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Pelvic Inflammatory Disease (PID) Treatment<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Diagnosis and management of PID and other sexually transmitted infections (STIs).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Menopause Management<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Hormone replacement therapy (HRT).</li>
+                        <li>Management of menopause-related symptoms like hot flashes and osteoporosis.</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <button class="collapsible-heading"><h2>Surgeries</h2><i class="fas fa-chevron-down"></i></button>
+            <div class="content">
+                <button class="collapsible">Hysterectomy<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Surgical removal of the uterus (abdominal, vaginal, or laparoscopic hysterectomy).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Myomectomy<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Surgical removal of uterine fibroids while preserving the uterus.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Laparoscopic & Minimally Invasive Surgery<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Laparoscopic treatment of ovarian cysts.</li>
+                        <li>Endometriosis resection.</li>
+                        <li>Diagnostic laparoscopy for pelvic pain or infertility.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Fertility Preservation Procedures<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Egg freezing and embryo preservation for future pregnancies.</li>
+                        <li>Ovarian tissue preservation.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Tubal Ligation<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Permanent sterilization procedure (tying or sealing fallopian tubes).</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Dilation and Curettage (D&C)<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Procedure to remove tissue from the uterus, often after miscarriage or to treat heavy bleeding.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Pelvic Reconstructive Surgery<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Treatment for pelvic organ prolapse.</li>
+                        <li>Surgical repair of vaginal or uterine prolapse.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Cervical Cerclage<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Stitching the cervix during pregnancy to prevent premature labor in high-risk pregnancies.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Endometrial Ablation<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Procedure to remove or destroy the lining of the uterus to treat heavy menstrual bleeding.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Oophorectomy<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Surgical removal of one or both ovaries.</li>
+                    </ul>
+                </div>
+        
+                <button class="collapsible">Vaginal Rejuvenation Surgery<i class="fas fa-chevron-down"></i></button>
+                <div class="content">
+                    <ul>
+                        <li>Surgical or non-surgical procedures to tighten or restore the vagina.</li>
+                    </ul>
+                </div>
+            </div>
+        
+           <!-- availability section -->
+           <div class="doctor-availability">
+               <h4>Availability</h4>
+               <table class="availability-table">
+                   <thead>
+                       <tr>
+                           <th>Doctor</th>
+                           <th>Monday</th>
+                           <th>Tuesday</th>
+                           <th>Wednesday</th>
+                           <th>Thursday</th>
+                           <th>Friday</th>
+                           <th>Saturday</th>
+                           <th>Sunday</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Dr. Smith</td>
+                           <td>9:00 AM - 5:00 PM</td>
+                           <td>9:00 AM - 5:00 PM</td>
+                           <td>9:00 AM - 5:00 PM</td>
+                           <td>9:00 AM - 5:00 PM</td>
+                           <td>9:00 AM - 5:00 PM</td>
+                           <td>10:00 AM - 2:00 PM</td>
+                           <td>Unavailable</td>
+                       </tr>
+                       <!-- Add more rows as needed -->
+                   </tbody>
+               </table>
+           </div>
+           
+           <!-- appointment booking section -->
+           <div class="appointment-booking">
+               <h5>Online Appointment Booking</h5>
+               <form class="appointment-form" id="appointment-form">
+                   <label for="doctor">Select Doctor:</label>
+                   <select id="doctor" name="doctor" required>
+                       <option value="">Select a doctor</option>
+                       <option value="Dr. Smith">Dr. eric</option>
+                       <!-- Add more options as needed -->
+                       <!-- Add more options as needed -->
+                   </select>
+                   <label for="date">Select Date:</label>
+                   <input type="date" id="date" name="date" required>
+               
+                   <label for="time">Select Time:</label>
+                   <select id="time" name="time" required>
+                       <option value="">Select a time</option>
+                       <!-- Time slots will be populated dynamically -->
+                   </select>
+               
+                   <label for="phoneNumber">Phone Number:</label>
+                   <input type="tel" id="phoneNumber" name="phoneNumber" required>
+               
+                   <button type="submit">Book Appointment</button>
+               </form>
+           </div>
+           
+           <script>
+               const doctorAvailability = {
+                   "Dr. Smith": {
+                       "Monday": ["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"],
+                       "Tuesday": ["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"],
+                       "Wednesday": ["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"],
+                       "Thursday": ["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"],
+                       "Friday": ["9:00 AM", "10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM"],
+                       "Saturday": ["10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM"],
+                       "Sunday": []
+                   },
+                  
+               };
+           
+               document.getElementById('doctor').addEventListener('change', updateAvailableTimes);
+               document.getElementById('date').addEventListener('change', updateAvailableTimes);
+           
+               function updateAvailableTimes() {
+                   const doctor = document.getElementById('doctor').value;
+                   const date = new Date(document.getElementById('date').value);
+                   const day = date.toLocaleDateString('en-US', { weekday: 'long' });
+           
+                   const timeSelect = document.getElementById('time');
+                   timeSelect.innerHTML = '<option value="">Select a time</option>';
+           
+                   if (doctor && day && doctorAvailability[doctor] && doctorAvailability[doctor][day]) {
+                       const times = doctorAvailability[doctor][day];
+                       times.forEach(time => {
+                           const option = document.createElement('option');
+                           option.value = time;
+                           option.textContent = time;
+                           timeSelect.appendChild(option);
+                       });
+                   }
+               }
+           
+               document.getElementById('appointment-form').addEventListener('submit', function(event) {
+                   event.preventDefault();
+                   alert('Appointment booked successfully!');
+               });
+           </script>
+           
+           </body>
+           </section>
+           
+           </div>
+           </main> 
+           
+           <style>
+               body {
+                   font-family: Arial, sans-serif;
+               }
+               .doctor-availability, .appointment-booking {
+                   margin: 20px;
+               }
+               .doctor-availability h2, .appointment-booking h2 {
+                   text-align: center;
+                   margin-bottom: 20px;
+               }
+               .availability-table {
+                   width: 100%;
+                   border-collapse: collapse;
+               }
+               .availability-table th, .availability-table td {
+                   border: 1px solid #ddd;
+                   padding: 8px;
+                   text-align: center;
+               }
+               .availability-table th {
+                   background-color: #4caf50;
+                   color: rgb(255, 255, 255);
+               }
+               .appointment-form {
+                   max-width: 600px;
+                   margin: 0 auto;
+                   padding: 20px;
+                   border: 1px solid #4caf50;
+                   border-radius: 5px;
+                   background-color: #13477c;
+               }
+               .appointment-form label {
+                   display: block;
+                   margin-bottom: 10px;
+               }
+               .appointment-form select, .appointment-form input {
+                   width: 100%;
+                   padding: 10px;
+                   margin-bottom: 20px;
+                   border: 1px solid #ddd;
+                   border-radius: 5px;
+               }
+               .appointment-form button {
+                   width: 100%;
+                   padding: 10px;
+                   background-color: #4caf50;
+                   color: white;
+                   border: none;
+                   border-radius: 5px;
+                   cursor: pointer;
+               }
+               .appointment-form button:hover {
+                   background-color: #45a049;
+                   
+               }
+               @media (max-width: 768px) {
+                   .availability-table, .availability-table thead, .availability-table tbody, .availability-table th, .availability-table td, .availability-table tr {
+                       display: block;
+                   }
+                   .availability-table thead tr {
+                       display: none;
+                   }
+                   .availability-table tr {
+                       margin-bottom: 15px;
+                   }
+                   .availability-table td {
+                       text-align: right;
+                       padding-left: 50%;
+                       position: relative;
+                   }
+                   .availability-table td::before {
+                       content: attr(data-label);
+                       position: absolute;
+                       left: 0;
+                       width: 50%;
+                       padding-left: 15px;
+                       font-weight: bold;
+                       text-align: left;
+                   }
+               }
+               
+ /* Collapsible button style */
+.collapsible, .collapsible-heading {
+    background-color: #4CAF50; /* Change to your desired background color */
+    color: white; /* Text color */
+    cursor: pointer;
+    padding: 18px; /* Padding inside the button */
+    width: 100%; /* Full width */
+    border: none; /* No border */
+    text-align: left; /* Align text to the left */
+    outline: none; /* Remove outline */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Active and hover state for collapsible button */
+.collapsible.active, .collapsible-heading.active, .collapsible:hover, .collapsible-heading:hover {
+    background-color: #45a049; /* Change to your desired hover color */
+}
+.collapsible-heading, .collapsible {
+            display: flex;
+            align-items: center;
+        }
+        .collapsible-heading i, .collapsible i {
+            margin-left: 10px;
+        }
+
+/* Content inside the collapsible section */
+.content {
+    padding: 0 18px; /* Padding inside the content */
+    display: none; /* Hidden by default */
+    overflow: hidden; /* Hide overflow */
+    background-color: #1e90ff; /* Background color of the content */
+    border-left: 3px solid #4CAF50; /* Left border to match button color */
+    margin-bottom: 10px; /* Space between sections */
+    font-size: 20px;
+}
+
+
+
+/* List style inside the content */
+.content ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indentation for list items */
+}
+
+.content ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .collapsible, .collapsible-heading {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .content {
+        padding: 0 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .collapsible, .collapsible-heading {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+
+    .content {
+        padding: 0 12px; /* Adjust padding for smaller screens */
+    }
+}
+</style>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.getElementsByClassName("collapsible");
+    var collHeadings = document.getElementsByClassName("collapsible-heading");
+
+    function toggleContent() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", toggleContent);
+    }
+
+    for (var j = 0; j < collHeadings.length; j++) {
+        collHeadings[j].addEventListener("click", toggleContent);
+    }
+});
+</script>
+
+<!-- Research & Expertise -->
+<section class="experience" id="Research">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Expertise & Services</h2>
+        </div>
+        <div class="experience-content owl-carousel owl-theme">
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/prenatal.jpg" alt="Prenatal Care">
+                </div>
+                <div class="experience-details">
+                    <h3>Prenatal Care</h3>
+                    <p>Providing comprehensive prenatal care to ensure the health of both mother and baby, from conception through delivery.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/surgeries.jpg" alt="Gynecological Surgery">
+                </div>
+                <div class="experience-details">
+                    <h3>Gynecological Surgery</h3>
+                    <p>Performing advanced gynecological surgeries such as hysterectomy, myomectomy, and minimally invasive laparoscopic procedures.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/infertility.jpg" alt="Infertility Treatment">
+                </div>
+                <div class="experience-details">
+                    <h3>Infertility Treatment</h3>
+                    <p>Offering diagnostic evaluations and treatment options for couples experiencing infertility, including assisted reproductive technologies.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/family planning.jpg" alt="Family Planning">
+                </div>
+                <div class="experience-details">
+                    <h3>Family Planning</h3>
+                    <p>Advising on a range of family planning methods and helping patients make informed choices about contraception and reproductive health.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/fibroids.jpg" alt="Fibroid Management">
+                </div>
+                <div class="experience-details">
+                    <h3>Fibroid Management</h3>
+                    <p>Specializing in the diagnosis and treatment of uterine fibroids, offering both medical and surgical solutions to manage symptoms.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/pregnancy.jpg" alt="High-Risk Pregnancy">
+                </div>
+                <div class="experience-details">
+                    <h3>High-Risk Pregnancy</h3>
+                    <p>Providing expert care for high-risk pregnancies, ensuring the safety and well-being of both mother and child throughout pregnancy.</p>
+                </div>
+            </div>
+            <div class="experience-box">
+                <div class="experience-image">
+                    <img src="img/fibroids.jpg" alt="Pelvic Pain & Endometriosis">
+                </div>
+                <div class="experience-details">
+                    <h3>Pelvic Pain & Endometriosis</h3>
+                    <p>Offering specialized care for chronic pelvic pain and endometriosis, focusing on diagnosis, treatment, and symptom relief.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Blog -->
+  <section class="blog" id="Blog">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Health Blog</h2>
+            <p>Latest Articles on Women's Health and Wellness</p>
+        </div>
+        <div class="blog-content owl-carousel owl-theme">
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="img/prenatal.jpg" alt="Prenatal Care Tips">
+                </div>
+                <div class="post-details">
+                    <h3>Essential Prenatal Care Tips for Expectant Mothers</h3>
+                    <p>Learn about the important steps in ensuring a healthy pregnancy through proper prenatal care.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="img/infertility.jpg" alt="Infertility Treatment Options">
+                </div>
+                <div class="post-details">
+                    <h3>Understanding Infertility and Treatment Options</h3>
+                    <p>An in-depth look at the causes of infertility and the various treatment options available.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="img/fibroids.jpg" alt="Managing Fibroids">
+                </div>
+                <div class="post-details">
+                    <h3>Managing Fibroids: Symptoms, Diagnosis, and Treatment</h3>
+                    <p>Explore the latest options for managing uterine fibroids, from medication to surgery.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="img/fibroids.jpg" alt="Living with Endometriosis">
+                </div>
+                <div class="post-details">
+                    <h3>Living with Endometriosis: Coping Strategies and Treatment</h3>
+                    <p>Get advice on managing endometriosis pain and improving quality of life with medical treatments.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="post-image">
+                    <img src="img/fibroids.jpg" alt="Pelvic Inflammatory Disease">
+                </div>
+                <div class="post-details">
+                    <h3>Pelvic Inflammatory Disease: Symptoms and Treatment</h3>
+                    <p>Learn how to recognize and treat pelvic inflammatory disease to protect reproductive health.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Appointment -->
+    <section class="appointment" id="appointment">
+        <div class="main-text">
+            <h2>Book an Appointment</h2>
+            <p>Schedule a consultation with me for medical advice, HIV/AIDS care, or general healthcare inquiries.</p>
+            <a href="#booking.html" class="btn">Book Now</a>
+            
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact Me</h2>
+            <h4>Let's Connect</h4>
+            <p>Reach out for collaborations, healthcare consultations, or research inquiries.</p>
+            <div class="contact-list">
+                <li><a href="#">Email: ericmusanyi8@gmail.com</a></li>
+                <li><a href="#">Phone: +254791674164</a></li>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name *" required>
+                        <input type="email" name="email" placeholder="Your Email *" required>
+                        <input type="text" name="subject" placeholder="Subject *" required>
+                        <textarea name="message" placeholder="Your Message (optional)"></textarea>
+                        <button type="submit" class="send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-sections">
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h4>About Pata Doc</h4>
+                <p>Pata Doc is dedicated to providing cutting-edge healthcare solutions through technology. Our mission is to empower both healthcare professionals and patients by making health management seamless and efficient.</p>
+                <p>Join us on our journey to revolutionize the health tech industry, one connection at a time.</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pata Doc. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.querySelector('.navbar');
+    
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+    <script>
+        function makeCall() {
+            const toNumber = prompt("Enter your phone number:");
+            if (toNumber) {
+                fetch('/make_call', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ to: toNumber })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'calling') {
+                        alert('Calling...');
+                    } else {
+                        alert('Failed to make the call.');
+                    }
+                });
+            }
+        }
+        
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+    </body>
+    </html>
+    
+</body>
+</html>
