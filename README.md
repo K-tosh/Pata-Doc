@@ -1,8 +1,5 @@
-Here’s a sample `README.md` file for your doctor's portfolio website project:
 
----
-
-# **Doctor's Portfolio Website**
+# **Doctor's Portfolio Website(Pata Doc)**
 
 ## **Project Overview**
 
@@ -45,8 +42,8 @@ This project is a professional portfolio website for doctors, providing a platfo
 
 ### **1. Clone the Repository**
 ```
-git clone https://github.com/your-username/doctor-portfolio.git
-cd doctor-portfolio
+git clone https://github.com/your-username/Pata-Doc.git
+cd Pata-Doc
 ```
 
 ### **2. API Key Setup**
@@ -68,7 +65,7 @@ cd doctor-portfolio
 
 ## **Project Demo**
 
-You can view a live demo of the project [here](https://your-github-username.github.io/doctor-portfolio/).
+You can view a live demo of the project [here](https://your-github-username.github.io/Pata-Doc/).
 
 
 ### **Next Steps**
@@ -84,7 +81,7 @@ This project was developed to bridge the gap between patients and doctors, makin
 
 Feel free to contribute to the project by submitting pull requests or reporting issues.
 
-- **GitHub Repository**: [https://github.com/your-username/doctor-portfolio](https://github.com/your-username/doctor-portfolio)
-- **Developer**: Eric Lugaya Musanyi (Your Name)
+- **GitHub Repository**: [https://github.com/your-username/Pata-Doc](https://github.com/your-username/Pata-Doc)
+- **Developer**: Eric Musanyi 
 
 ---
